@@ -1,4 +1,4 @@
-public class w3schools { // incepe clasa
+public class w3schoolsTutorial { // incepe clasa
     public static void main(String[] args) { // incepe metoda main
 /*
         float f1 = 35e1f; // "e" dintre numere inseamna 10, cifra de dupa  arata cate zerouri iar "f" vine de la float intimp ce "d" vine de la double
@@ -124,6 +124,66 @@ public class w3schools { // incepe clasa
         // loop-ul o ia de la capat pana ajunge sa printeze 9
         // dupa ce a printat 9 i se creste valoarea lui i cu 1 iar cand loop-ul incepe de la capat
         // i nu mai este mai mic decat 10 astfel se opreste loop-ul
-        
+
+        // Java Arrays
+        // Arrays sunt folosite sa stockeze mai multe valori intr-o singura variabila
+        // in loc declaram variabile diferite pentru fiecare valoare.
+        // Pentru a declara un array, defineste tipul de variabila cu paranteze patrate []
+        /*String [] masini;*/
+        // Tocmai am declarat o variabila care tine un Array de Strings.
+        // Ca sa ii dam valori, pune valorile intre paranteze tuguiate {}
+        /*String [] masini = {"BMW", "Dacia", "Volkswagen", "Honda"};
+        // Pentru un Array de Integer, poti scrie:
+        int[] aniProductie = {2003, 1989, 1999, 2005};
+
+        // Accesam un element din Array prin intermediul indexului sau
+        // Indexul din array incepe cu 0, [0]acesta fiind primul ement, [1]al doilea element
+        System.out.println(masini[0]);
+        // Va returna BMW
+
+        // Suprascrierm un element dintr-un array folosindu-ne de indexul elementului
+        masini [0] = "Mazda";
+        System.out.println(masini[0]);
+
+        // Afla cate elemente sunt intr-un array, folosind proprietatea "length" :
+        System.out.println(masini.length);
+        // Va returna 4*/
+
+        // Poti parcurge elementele unui Array cu un for loop,
+        // utilizand proprietatea length sa specifici de cate ori sa ruleze
+        // Exemplul urmator returneaza toate elementele din Array-ul masini
+        /*for (int i = 0; i < masini.length; i++) {
+            System.out.println(masini[i]);
+        }
+        System.out.println("----------------------");
+        // Scris mai simplu cu un for each:
+        for (String m : masini){
+            System.out.println(m);
+        }
+        // Returneaza Mazda, Dacia, Volkswagen si Honda
+*/
+        // Array multidimensional care este un Array intr-un array.
+        // Array ul multidimensional este folositor cand vrei sa stochezi date intr-un format tabel cu randuri si coloane
+        // Sa creezi un two-dimensional array, adauga fiecare array in propriul set de {}:
+        /*int [][] numere = {{1,3,5,7,9}, {2,4,6,8}};
+        // numere este acum un array cu doua arrays ca si elementele sale
+
+        // Acceseaza elementele array-ului numere specificand doi indexi:
+        // unul pentru array si celalalt pentru elementul din interiorul acelui array.
+        // Exemplul acceseaza al treilea element (2) in al doilea array (1) din numere
+        System.out.println(numere[1][2]);
+
+        // Suprascriem valoarea unui element:
+        numere[1][2] = 5;
+        System.out.println(numere[1][2]);
+*/
+        // Loop printr-un array multidimensional
+        // Cu ajutorul unui for loop intr-un alt for loop
+        int [][] numere = {{1,3,5,7,9}, {2,4,6,8}};
+        for (int i = 0; i < numere.length; ++i){
+            for (int j = 0; j < numere[i].length; ++j){
+                System.out.println(numere[i][j]);
+            }
+        }
     } // se termina metoda main
 } // se termina clasa
