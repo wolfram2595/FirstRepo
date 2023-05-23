@@ -1,3 +1,5 @@
+package w3schools.com;
+
 public class w3schoolsTutorial { // incepe clasa
     public static void main(String[] args) { // incepe metoda main
 /*
@@ -185,5 +187,6 @@ public class w3schoolsTutorial { // incepe clasa
                 System.out.println(numere[i][j]);
             }
         }
+
     } // se termina metoda main
 } // se termina clasa
